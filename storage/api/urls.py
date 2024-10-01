@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from .views import LocationList, LocationDetail, ItemList, ItemDetail
 
 urlpatterns = [
     path('location/', LocationList.as_view()),
