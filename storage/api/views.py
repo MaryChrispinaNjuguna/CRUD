@@ -15,7 +15,7 @@ class ItemList(generics.ListCreateAPIView):
             queryset = queryset.filter(location=location)  # Filter items by location
         return queryset  # Return the filtered or full queryset
 
-# This class handles retrieving, updating, and deleting a single item by ID.
+# This class handles retrieving, updating, and deleting a single item by its ID.
 class ItemDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Item.objects.all()  # Retrieve all items, required by Django Rest Framework
     serializer_class = ItemSerializer  # Specifies the serializer used for this view (ItemSerializer)
