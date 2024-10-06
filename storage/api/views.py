@@ -1,6 +1,6 @@
 from rest_framework import generics  # Import Django Rest Framework's generic views
 
-from .models import Location, Item  # Importing the models
+from .models import Location, Item  # Importing the Location and Item models
 from .serializers import LocationSerializer, ItemSerializer  # Importing the serializers for Location and Item models
 
 # This class handles listing and creating new items.
